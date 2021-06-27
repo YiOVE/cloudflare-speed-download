@@ -1,0 +1,72 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+/*用弹性盒布局实现块元素行内对齐*/
+header {
+     display: flex;
+     align-items: center;           /*子元素居中*/
+     justify-content: flex-end;       /*子元素靠右*/
+    }
+
+p {
+    line-height: 35px;
+    margin: 0 10px 0 10px;
+}
+
+img.menu {
+    width: 20px;
+    margin: 10px;
+}
+img.name {
+    width: 35px;
+    margin: 10px;
+}
+/*header end*/
+
+
+#logo{
+    text-align: center;
+}
+
+img.logo {
+    width: 550px;    
+}
+#othernav {
+    text-align: center;
+}
+img.othernav {
+    margin: 60px 25px 0px 25px;
+    width: 50px;
+}
+
+
+#search { 
+    width: 450px;
+    height: 40px;
+    border:none;    /*取消默认的边框以设置自定义边框*/
+    outline:none;   /*取消浏览器默认的蓝光边框以设置自定义的输入框*/
+    font-size: 16px;        
+    color: rgb(112, 112, 112);
+}
+.searchbar {        /*目的是设置自定义边框，比如圆角与阴影*/
+    border: rgb(218, 218, 218) solid 1px;
+    border-radius: 2em;
+    width: 552px;
+    height: 42px;
+    box-shadow: 0px 0px 5px rgb(212, 212, 212);
+    margin: 0 auto;
+}
+
+.mcp {
+    height: 35px;
+}
+
+.mg {
+    height: 25px;
+    margin-left: 15px;
+}
+#search, .mcp, .mg {
+    vertical-align: middle;
+}
